@@ -13,7 +13,8 @@ int main(void)
 
 	for (a = 0; a <= 9; a++)
 	{
-		for (b = a; b <= 9; b++)
+		b = a + 1;
+		while (b <= 9)
 		{
 			putchar((a % 10) + '0');
 			putchar((b % 10) + '0');
@@ -23,6 +24,7 @@ int main(void)
 
 			putchar(',');
 			putchar(' ');
+			b++;
 		}
 
 	}
