@@ -18,13 +18,13 @@ int main(void)
 		{
 			putchar((a % 10) + '0');
 			putchar((b % 10) + '0');
+			b++;
 
 			if (a == 9 && b == 9)
 				continue;
 
 			putchar(',');
 			putchar(' ');
-			b++;
 		}
 
 	}
