@@ -12,10 +12,8 @@ int main(void)
 	int a;
 
 	for (a = 0; a <= 10; a++)
-	{
-		if (a % 2 != 0)
-			putchar(a);
-	}
+		putchar(a);
+
 	putchar('\n');
 
 	return (0);
