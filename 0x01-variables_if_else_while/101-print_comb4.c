@@ -16,15 +16,18 @@ int main(void)
 		b = a + 1;
 		while (b <= 9)
 		{
-			putchar((a % 10) + '0');
-			putchar((b % 10) + '0');
+			c = b + 1;
+			while (c <= 9)
+			{
+				putchar((a % 10) + '0');
+				putchar((b % 10) + '0');
+				c++;
+				if (a == 9 && b == 9 && c == 9)
+					continue;
+				putchar(',');
+				putchar(' ');
+			}
 			b++;
-
-			if (a == 9 && b == 9)
-				continue;
-
-			putchar(',');
-			putchar(' ');
 		}
 
 	}
