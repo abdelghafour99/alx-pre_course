@@ -21,9 +21,12 @@ int main(void)
 			{
 				putchar((a % 10) + '0');
 				putchar((b % 10) + '0');
+				putchar((c % 10) + '0');
 				c++;
 				if (a == 9 && b == 9 && c == 9)
+				{
 					continue;
+				}
 				putchar(',');
 				putchar(' ');
 			}
