@@ -23,7 +23,7 @@ int main(void)
 				putchar((b % 10) + '0');
 				putchar((c % 10) + '0');
 				c++;
-				if (a == 9 && b == 9 && c == 9)
+				if (a == 7 && b == 8 && c == 9)
 				{
 					continue;
 				}
