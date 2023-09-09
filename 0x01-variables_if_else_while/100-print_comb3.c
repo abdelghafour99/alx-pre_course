@@ -11,7 +11,7 @@ int main(void)
 {
 	int a, b;
 
-	for (a = 0; a <= 9; a++)
+	for (a = 0; a < 9; a++)
 	{
 		b = a + 1;
 		while (b <= 9)
@@ -20,7 +20,7 @@ int main(void)
 			putchar((b % 10) + '0');
 			b++;
 
-			if (a == 9 && b == 9)
+			if (a == 8 && b == 9)
 				continue;
 
 			putchar(',');

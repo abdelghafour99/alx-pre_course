@@ -11,10 +11,10 @@ int main(void)
 {
 	int a, b, c;
 
-	for (a = 0; a <= 9; a++)
+	for (a = 0; a < 8; a++)
 	{
 		b = a + 1;
-		while (b <= 9)
+		while (b < 9)
 		{
 			c = b + 1;
 			while (c <= 9)
