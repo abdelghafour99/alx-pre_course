@@ -18,7 +18,7 @@ int main(void)
 			c = a;
 			while (c <= 9)
 			{
-				d = b + 1;
+				d = b;
 				while (d <= 9)
 				{
 					putchar((a % 10) + '0');
