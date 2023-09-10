@@ -1,7 +1,7 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main - Prints all possible combinations of tow digit
+ * main - Prints all possible combinations of tow digits
  *        followed by a new line
  *
  * Return: Always 0

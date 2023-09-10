@@ -1,7 +1,7 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main - Prints all possible combinations of tow digit
+ * main - Prints all possible combinations of three digit
  *        followed by a new line
  *
  * Return: Always 0
@@ -22,8 +22,10 @@ int main(void)
 				putchar((a % 10) + '0');
 				putchar((b % 10) + '0');
 				putchar((c % 10) + '0');
+
 				if (a == 7 && b == 8 && c == 9)
 					continue;
+
 				c++;
 				putchar(',');
 				putchar(' ');
