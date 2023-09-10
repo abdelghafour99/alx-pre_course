@@ -24,16 +24,13 @@ int main(void)
 				putchar((c % 10) + '0');
 				c++;
 
-				if (a == 7 && b == 8 && c == 10)
+				if (a >= 7 && b >= 8 && c >= 9)
 					continue;
 
 				putchar(',');
 				putchar(' ');
 
 			}
-
-			if (a == 7 && b == 8)
-				continue;
 
 			b++;
 		}
