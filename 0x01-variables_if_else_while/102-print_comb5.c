@@ -9,7 +9,7 @@
 
 int main(void)
 {
-	int a, b, c, d;
+	int a, b, c, d, c2;
 
 	for (a = 0; a < 10; a++)
 	{
@@ -18,7 +18,7 @@ int main(void)
 			c = a;
 			while (c <= 9)
 			{
-				if (a == 0 && b == 0 && c == 0)
+				if (c2 == 9)
 				{ d = b + 1; }
 				else
 				{ d = 0; }
@@ -30,6 +30,7 @@ int main(void)
 					putchar((c % 10) + '0');
 					putchar((d % 10) + '0');
 					d++;
+					c2 = d;
 
 					if (a >= 9 && b >= 8 && c >= 9 && d >= 9)
 						continue;
