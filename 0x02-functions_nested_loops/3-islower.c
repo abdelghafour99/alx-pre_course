@@ -3,13 +3,11 @@
 /**
  * _islower - 1 or 0
  *
- *
- * Return 1 if lowercase
- * Return 0 if not
+ * @c: the one be checked
+ * Return: 1 if lowercase or 0 if not
  */
 int _islower(int c)
 {
-	char c;
 
 	if (c >= 'a' && c <= 'z')
 	{
