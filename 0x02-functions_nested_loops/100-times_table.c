@@ -24,7 +24,7 @@ void print_times_table(int n)
 					printf(",   ");
 					printf("%d", a * b);
 				}
-				else if (a * b < 100) 
+				else if (a * b < 100)
 				{
 					printf(",  ");
 					printf("%d", a * b);
