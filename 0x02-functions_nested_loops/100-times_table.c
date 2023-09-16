@@ -21,12 +21,12 @@ void print_times_table(int n)
 					printf("0");
 				else
 				{
-					printf("%d", a);
+					printf("%d", a * b);
 					printf(", ");
 				}
 			}
+			printf("\n");
 		}
-	printf("\n");
 	}
 
 }
