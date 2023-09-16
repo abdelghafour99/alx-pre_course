@@ -21,10 +21,15 @@ void print_times_table(int n)
 					printf("0");
 				else if (a * b < 10)
 				{
+					printf(",   ");
+					printf("%d", a * b);
+				}
+				else if (a * b < 100) 
+				{
 					printf(",  ");
 					printf("%d", a * b);
 				}
-				else 
+				else
 				{
 					printf(", ");
 					printf("%d", a * b);
