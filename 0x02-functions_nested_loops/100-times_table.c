@@ -21,8 +21,8 @@ void print_times_table(int n)
 					printf("0");
 				else
 				{
-					printf("%d", a * b);
 					printf(", ");
+					printf("%d", a * b);
 				}
 			}
 			printf("\n");
