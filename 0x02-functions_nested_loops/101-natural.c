@@ -23,6 +23,7 @@ int main(void)
 				b = b + a;
 		}
 	}
-	printf("%c", b);
+	printf("%d", b);
+	printf("\n");
 	return (0);
 }
