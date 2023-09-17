@@ -17,22 +17,19 @@ int main(void)
 		{
 			putchar('0');
 			putchar('0');
-			putchar('0');
-			putchar('1');
 		}
-		else
-		{
 		for (b = a + 1; b <= 99; b++)
 		{
+			if (b < 10)
+				putchar('0');
+			putchar(b + '0');
 			putchar(',');
 			putchar(' ');
 			if (a < 10)
 				putchar('0');
 			putchar(a + '0');
-			if (b < 10)
-				putchar('0');
-			putchar(b + '0');
-		}
+			if (b == 99 && a == 98)
+				break;
 		}
 
 	}
