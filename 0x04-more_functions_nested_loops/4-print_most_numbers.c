@@ -1,4 +1,5 @@
 #include "main.h"
+#include "_putchar.c"
 
 /**
  * print_most_numbers - print numbers 0 to 9
