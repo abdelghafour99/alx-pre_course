@@ -11,7 +11,7 @@ int main(void)
 {
 	int a, b, c, d, c2 = 1, d2 = 1;
 
-	for (a = 0; a < 10; a++)
+	for (a = 0; a <= 9; a++)
 	{
 		for (b = 0; b <= 9; b++)
 		{
@@ -30,6 +30,8 @@ int main(void)
 					putchar((d % 10) + '0');
 					putchar(',');
 					putchar(' ');
+					if (a == 9 && b == 8 && c == 9 && d == 9)
+						break;
 				}
 				d2 = 0;
 			}
