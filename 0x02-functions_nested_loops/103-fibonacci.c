@@ -9,18 +9,21 @@
  */
 int main(void)
 {
-	long int b1, b2, b3;
+	long int a, b1, b2, b3;
 
 	b1 = 0;
 	b2 = 1;
 
-	while (b2 < 4000000)
+	for (a = 1; a < 50; a++)
 	{
 		b3 = b1;
 		b1 = b2;
 		b2 = b1 + b3;
-		if (b2 % 2 == 0)
+		if (b2 % 2 == 0 && b2 > 4000000)
+		{
 			printf("%ld, ", b2);
+			break;
+		}
 	}
 	printf("\n");
 	return (0);
