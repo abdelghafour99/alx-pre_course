@@ -9,17 +9,18 @@
  */
 int main(void)
 {
-	int a, b1, b2, b3;
+	int b1, b2, b3;
 
 	b1 = 0;
 	b2 = 1;
 
-	for (a = 0; a < 50; a++)
+	while (b2 < 4000000)
 	{
 		b3 = b1;
 		b1 = b2;
 		b2 = b1 + b3;
-		printf("%ld, ", b2);
+		if (b2 % 2 == 0)
+			printf("%ld, ", b2);
 	}
 	printf("\n");
 	return (0);
