@@ -9,7 +9,7 @@
 
 int main(void)
 {
-	int a, b, c, d, c2 = 1, d2 = 1;
+	int a, b, c, d, c2 = 1, d2 = 1, f = 0;
 
 	for (a = 0; a <= 9; a++)
 	{
@@ -17,11 +17,13 @@ int main(void)
 		{
 			for (c = a; c <= 9; c++)
 			{
-				for (d = 0; d <= 9; d++)
+				d = 0;
+				while (d <= 9)
 				{
-					if (d == 0 && d2 == 1)
+					if (d2 == 1)
 					{
 						d = d + c2;
+						d2 = 0;
 					}
 					putchar((a % 10) + '0');
 					putchar((b % 10) + '0');
@@ -30,10 +32,8 @@ int main(void)
 					putchar((d % 10) + '0');
 					putchar(',');
 					putchar(' ');
-					if (a == 9 && b == 8 && c == 9 && d == 9)
-						break;
+					d++;
 				}
-				d2 = 0;
 			}
 			c2++;
 			d2 = 1;
