@@ -9,7 +9,7 @@
 
 int main(void)
 {
-	int a, b, c, d, c2 = 9, d2 = 9;
+	int a, b;
 
 	for (a = 0; a <= 98; a++)
 	{
@@ -20,7 +20,8 @@ int main(void)
 			putchar('0');
 			putchar('1');
 		}
-
+		else
+		{
 		for (b = a + 1; b <= 99; b++)
 		{
 			putchar(',');
@@ -31,6 +32,7 @@ int main(void)
 			if (b < 10)
 				putchar('0');
 			putchar(b + '0');
+		}
 		}
 
 	}
