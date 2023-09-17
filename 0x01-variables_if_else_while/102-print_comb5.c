@@ -9,38 +9,28 @@
 
 int main(void)
 {
-	int a, b, c, d, c2;
+	int a, b, c, d, c2 = 9, d2 = 9;
 
-	for (a = 0; a < 10; a++)
+	for (a = 0; a <= 98; a++)
 	{
-		for (b = 0; b <= 9; b++)
+		if (a == 0)
 		{
-			c = a;
-			while (c <= 9)
-			{
-				if (c2 == 9)
-				{ d = b + 1; }
-				else
-				{ d = 0; }
-				while (d <= 9)
-				{
-					putchar((a % 10) + '0');
-					putchar((b % 10) + '0');
-					putchar(' ');
-					putchar((c % 10) + '0');
-					putchar((d % 10) + '0');
-					d++;
-					c2 = d;
+			putchar('0');
+			putchar('0');
+			putchar('0');
+			putchar('1');
+		}
 
-					if (a >= 9 && b >= 8 && c >= 9 && d >= 9)
-						continue;
-
-					putchar(',');
-					putchar(' ');
-				}
-				c++;
-			}
-
+		for (b = a + 1; b <= 99; b++)
+		{
+			putchar(',');
+			putchar(' ');
+			if (a < 10)
+				putchar('0');
+			putchar(a + '0');
+			if (b < 10)
+				putchar('0');
+			putchar(b + '0');
 		}
 
 	}
