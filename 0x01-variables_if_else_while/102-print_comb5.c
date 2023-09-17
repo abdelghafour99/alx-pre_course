@@ -9,30 +9,35 @@
 
 int main(void)
 {
-	int a, b;
+	int a, b, c, d, c2 = 1, d2 = 1;
 
-	for (a = 0; a <= 98; a++)
+	for (a = 0; a < 10; a++)
 	{
-		if (a == 0)
+		for (b = 0; b <= 9; b++)
 		{
-			putchar('0');
-			putchar('0');
+			for (c = a; c <= 9; c++)
+			{
+				for (d = 0; d <= 9; d++)
+				{
+					if (d == 0 && d2 == 1)
+					{
+						d = d + c2;
+					}
+					putchar((a % 10) + '0');
+					putchar((b % 10) + '0');
+					putchar(' ');
+					putchar((c % 10) + '0');
+					putchar((d % 10) + '0');
+					putchar(',');
+					putchar(' ');
+				}
+				d2 = 0;
+			}
+			c2++;
+			d2 = 1;
 		}
-		for (b = a + 1; b <= 99; b++)
-		{
-			if (b < 10)
-				putchar('0');
-			putchar(b + '0');
-			putchar(',');
-			putchar(' ');
-			if (a < 10)
-				putchar('0');
-			putchar(a + '0');
-			if (b == 99 && a == 98)
-				break;
-		}
-
 	}
 
+	putchar('\n');
 	return (0);
 }
