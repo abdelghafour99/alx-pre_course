@@ -14,7 +14,7 @@ int main(void)
 	b1 = 1;
 	b2 = 1;
 
-	printf("%ld, ", b2);
+	printf("%ld", b2);
 
 	for (a = 1; a < 50; a++)
 	{
