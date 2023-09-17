@@ -2,11 +2,12 @@
 #include <stdio.h>
 
 /**
- * print_sum_3_5 - print sum 3 & 5
+ * main - print sum 3 & 5
  *
  *
+ * Return: Always 0.
  */
-void print_sum_3_5(void)
+int main(void)
 {
 	int a, b;
 
@@ -23,4 +24,5 @@ void print_sum_3_5(void)
 		}
 	}
 	printf("%d", b);
+	return (0);
 }
