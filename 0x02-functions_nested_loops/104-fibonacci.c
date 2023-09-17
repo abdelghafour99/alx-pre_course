@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * main - 50-fibonacci
+ * main - 98-fibonacci
  *
  *
  * Return: Always 0.
@@ -17,7 +17,7 @@ int main(void)
 
 	printf("%ld", b2);
 
-	for (a = 1; a < 98; a++)
+	for (a = 1; a < 99; a++)
 	{
 		b3 = b1;
 		b1 = b2;
