@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * _isdigit - checks for a digit
+ * mul - mul of two integrs
  * @a : the first number
  * @b : the second number
  * Return: 1
  */
-int _isdigit(int a, int b)
+int mul(int a, int b)
 {
 	return (a * b);
 
