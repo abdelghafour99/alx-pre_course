@@ -2,11 +2,11 @@
 #include <stdio.h>
 
 /**
- * print_rev - the length of a string
+ * rev_string- the length of a string
  *
  * @s: the string check
  */
-void print_rev(char *s)
+void rev_string(char *s)
 {
 	int a;
 
@@ -24,6 +24,5 @@ void print_rev(char *s)
 		a--;
 	}
 
-	putchar('\n');
 
 }
