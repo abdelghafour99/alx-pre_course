@@ -18,9 +18,10 @@ void rev_string(char *s)
 		a++;
 	}
 	s--;
-	while (a >= 0)
+	while (a > 0)
 	{
-		putchar(*s--);
+		putchar(*s);
+		s--;
 		a--;
 	}
 
