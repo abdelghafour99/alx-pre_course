@@ -2,26 +2,24 @@
 #include <stdio.h>
 
 /**
- * _puts2 - the length of a string
+ * puts2 - the length of a string
  *
  * @str: the number check
  */
-void _puts2(char *str)
+void puts2(char *str)
 {
 	int a = 0, n;
-	char *s = str;
 
-	while (*s != '\0')
+	while (str[a] != '\0')
 	{
-		s++;
 		a++;
 	}
-	a--;
-	for (n = 0; n <= a; n++)
+
+	for (n = 0; n <= a; n += 2)
 	{
-		if (n % 2 == 0)
-			putchar(str[n]);
+		putchar(str[n]);
 	}
+
 	putchar('\n');
 
 }
