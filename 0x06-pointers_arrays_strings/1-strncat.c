@@ -4,9 +4,9 @@
 /**
  * _strncat - concatenates two strings
  *
+ * @n: dest lentgh
  *@dest: the first string
  *@src: the second one
- *@n: dest lenght
  * Return: Always ptr
  */
 
@@ -18,14 +18,13 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		i++;
 	}
-	
-	while (j < n && src[j] != '\0')
+
+	while (src[j] != '\0' && j < n)
 	{
 		dest[i] = src[j];
 		j++;
 		i++;
 	}
-
 	dest[i] = '\0';
 
 	return (dest);
