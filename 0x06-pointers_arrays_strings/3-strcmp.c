@@ -6,7 +6,7 @@
  *
  *@s1: the first string
  *@s2: the second one
- * Return: Always s2
+ * Return: Always s1[a] - s2[a]
  */
 
 int *_strcmp(char *s1, char *s2)
@@ -17,7 +17,7 @@ int *_strcmp(char *s1, char *s2)
 	{
 		if (s1[a] != s2[a])
 		{
-			return (s1[a] - s2[a]);
+			return (s1[a]);
 		}
 		a++;
 	}
