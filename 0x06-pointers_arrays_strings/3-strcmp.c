@@ -2,30 +2,23 @@
 #include <stdio.h>
 
 /**
- * _strncat - concatenates two strings
+ * _strcmp - concatenates two strings
  *
- * @n: dest lentgh
- *@dest: the first string
- *@src: the second one
- * Return: Always ptr
+ *@s1: the first string
+ *@s2: the second one
+ * Return: Always s2
  */
 
-char *_strncat(char *dest, char *src, int n)
+int *_strcmp(char *s1, char *s2)
 {
-	int i = 0, j = 0;
+	int a = 0;
 
-	while (dest[i] != '\0')
+	while (s1[a] != '\0' && s2[a] != '\0')
 	{
+		if (s1[a] != s2[a])
+			return (s1[a] - s2[a]);
 		i++;
 	}
 
-	while (src[j] != '\0' && j < n)
-	{
-		dest[i] = src[j];
-		j++;
-		i++;
-	}
-	dest[i] = '\0';
-
-	return (dest);
+	return (0);
 }
