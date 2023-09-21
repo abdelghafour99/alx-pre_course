@@ -10,7 +10,7 @@
  * Return: Always ptr
  */
 
-char *_strncat(char *dest, char *src)
+char *_strncat(char *dest, char *src, int n)
 {
 	int i = 0, j = 0;
 
@@ -25,6 +25,7 @@ char *_strncat(char *dest, char *src)
 		j++;
 		i++;
 	}
+
 	dest[i] = '\0';
 
 	return (dest);
