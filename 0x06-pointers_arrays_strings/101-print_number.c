@@ -22,7 +22,7 @@ void print_number(int n)
 
 	for (i = b; i >= 0; i--)
 	{
-		putchar(a[i] + '0');
+		_putchar(a[i] + '0');
 	}
 
 }
